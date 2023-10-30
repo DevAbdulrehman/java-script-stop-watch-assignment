@@ -23,19 +23,20 @@ function time() {
   }
 }
 function start() {
-   myTime = setInterval(time, 10); 
+  myTime = setInterval(time, 10);
 }
 
 function stop() {
-   clearInterval(myTime); 
+  clearInterval(myTime);
 }
 
-function reset(){
-  document.getElementById("msec").innerText = "00";
-  document.getElementById("sec").innerText = "00";
-  document.getElementById("min").innerText = "00";
-  document.getElementById("hr").innerText = "00";
+function reset() {
+  hr = "00";
+  min = "00";
+  sec = "00";
+  msec = "00";
+  document.getElementById("msec").innerText = msec;
+  document.getElementById("sec").innerText = sec;
+  document.getElementById("min").innerText = min;
+  document.getElementById("hr").innerText = hr;
 }
-
-
-
