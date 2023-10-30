@@ -39,4 +39,5 @@ function reset() {
   document.getElementById("sec").innerText = sec;
   document.getElementById("min").innerText = min;
   document.getElementById("hr").innerText = hr;
+  clearInterval(myTime)
 }
